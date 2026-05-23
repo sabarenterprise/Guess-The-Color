@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guess The Color</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="display-container">
+
+    <div class="header flex-space">
+      <h2>Guess The Color</h2>
+      <div class="timer">Time: <span id="time">10</span>s</div>
+    </div>
+
+    <div class="question-area">
+      <p class="question-text">Pilih warna yang sesuai dengan:</p>
+      <h1 id="rgb-value">RGB(255, 0, 0)</h1>
+    </div>
+
+    <div id="container" class="button-container"></div>
+
+    <div class="footer flex-space">
+      <div class="number-of-count">
+        Question: <span id="question-number">1</span>/10
+      </div>
+
+      <button id="next-button">Next</button>
+    </div>
+
+    <!-- Start Screen -->
+    <div class="start-screen">
+      <h1>Guess The Color</h1>
+      <button id="start-button">Start Game</button>
+    </div>
+
+    <!-- Score Screen -->
+    <div class="score-container hide">
+      <h1>Game Over</h1>
+      <div id="user-score"></div>
+      <button id="restart">Restart</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
